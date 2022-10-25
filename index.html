@@ -4,33 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Note App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="addTask">
-            <label>
-                <input type="text" spellcheck="true" placeholder="Adicionar tarefa">
-            </label>
-            <button onclick=hello() id="addTask">ADD</button>
-        </div>
-        
-        <div class="notes">
-            <ul>
-                <div class="itemTask">
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <button>Editar</button>
-                    <button>Excluir</button>
-                </div>
-                <li>Task 2</li>
-                <li>Task 3</li>
-                <li>Task 4</li>
-            </ul>
-        </div>    
-    </div>
+    <h1>Lista de tarefas</h1>
 
-    <script src="/script.js"></script>
+    <form name="form_main">
+      <label for="task">Tarefa: </label> 
+      <input type="text" name="task" id="task" /> <br />
+      <button type="button" onclick="add()">Add</button>
+    </form>
+    
+    <fieldset>
+      <legend>Tarefas:</legend>
+      <ul>
+        <li>Limpar casa</li>
+        <li>Outras</li>
+      </ul>
+    </fieldset>
+   <script src="/js/script.js"></script>
 </body>
 </html>
